@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="calculatorContainer">
+        <h1 class="heading-1">Please enter 2 numbers you would like to add below</h1>
+        <form onsubmit="onCalculate(event)">
+        <div class="inputsContainer">
+        <div>
+            <span class="labels" for="firstInput">First Input</span>
+            <input class="inputs" type="integer" id="firstInputField" value="" placeholder="0">    
+        </div>    
+        <h1 class="heading-4">+</h1>
+        <div>
+        <span class="labels" for="secondInput">Second Input</span>
+        <input class="inputs" type="number" id="secondInputField" value="" placeholder="0">
+        </div>
+    </div>
+    <div class="buttonContainer">
+        <button class="submitBTN">Sumbit</button>
+    </div>
+    <div class="resultsContainer">
+        <h4 class="heading-4" id="result">Result: </h4>
+    </div>
+
+        
+        </form>
+    </div>
+</body>
+<script rel="script" src="script.js"></script>
+</html>
