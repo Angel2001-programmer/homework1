@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(34, 34, 34);
+}
+
+.calculatorContainer{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: rgb(1, 1, 43);
+    height: 90vh;
+    border-radius: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 15px;
+}
+
+.buttonContainer{
+    display: flex;
+    margin-top: 20vh;
+    justify-content: center;
+}
+
+.resultsContainer{
+    display: flex;
+    margin-top: 3%;
+    margin-left: 0;
+    justify-content: flex-start;
+}
+
+.heading-1, .heading-4{
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.inputsContainer{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+}
+
+form{
+    margin-top: 10vh;
+}
+
+.labels{
+    display: flex;
+    color: white;
+    font-size: 30px;
+    flex-flow: column wrap;
+}
+
+.inputs{
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    flex-flow: column wrap;
+    padding: 5px;
+    border-radius: 15px;
+    min-width: fit-content;
+
+}
+
+.submitBTN{
+    border: 3px solid rgb(0, 0, 218);
+    background-color: rgb(0, 0, 155);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    min-width: fit-content;
+}
+
+.sumbitBTN:hover{
+    background-color: rgb(0, 0, 218);
+}
+
+
+@media all and (max-width: 1200px) {
+    .heading-1, .heading-4{
+        font-size: 4vh;
+    }
+
+    .inputsContainer{
+        flex-flow: column wrap;
+    }
+}
+
+@media all and (max-width: 900px) {
+    .heading-1, .heading-4{
+        font-size: 4vh;
+    }
+
+    .submitBTN{
+        width: 95%;
+    }
+}
+
+@media all and (max-width: 530px) {
+    .heading-1, .heading-4{
+        font-size: 3vh;
+    }
+
+    .inputs{
+        width: 90%;
+    }
+
+    .calculatorContainer{
+        width: 70%;
+    } 
+}
+
+@media all and (max-width: 360px) {
+    .heading-1, .heading-4{
+        font-size: 2vh;
+    }
+    
+}
